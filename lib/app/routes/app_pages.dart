@@ -1,3 +1,5 @@
+import 'package:fgetx/app/modules/pemesanan_makanan/bindings/pemesanan_makanan_binding.dart';
+import 'package:fgetx/app/modules/pemesanan_makanan/views/pemesanan_makanan_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/counter/bindings/counter_binding.dart';
@@ -6,6 +8,10 @@ import '../modules/formulir/bindings/formulir_binding.dart';
 import '../modules/formulir/views/formulir_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/post/bindings/post_binding.dart';
+import '../modules/post/views/post_view.dart';
+
+// ignore_for_file: constant_identifier_names, prefer_const_constructors
 
 part 'app_routes.dart';
 
@@ -17,7 +23,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
@@ -27,8 +33,18 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.FORMULIR,
-      page: () => const FormulirView(),
+      page: () => FormulirView(),
       binding: FormulirBinding(),
+    ),
+    GetPage(
+      name: _Paths.POST,
+      page: () => PostView(),
+      binding: PostBinding(),
+    ),
+    GetPage(
+      name: _Paths.PEMESANAN_MAKANAN,
+      page: () => PemesananMakananView(),
+      binding: PemesananMakananBinding(),
     ),
   ];
 }
