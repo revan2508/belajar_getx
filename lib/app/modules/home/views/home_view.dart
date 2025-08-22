@@ -40,6 +40,12 @@ class HomeView extends StatelessWidget {
       icon: Icons.article,       // Icon untuk post, bisa diganti sesuai selera
       color: Colors.purple,
     ),
+    _PageItem(
+      title: 'Albums Page',
+      route: Routes.ALBUMS,
+      icon: Icons.album,
+      color: Colors.teal,
+    ),
   ];
 
   @override

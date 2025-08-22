@@ -8,8 +8,8 @@ class CounterController extends GetxController {
 
  void increment() {
   if (count.value < 50) {
-    // Increment the count only if it's less than 10
-    count.value++;
+    // Increment the count only if it's less than 50
+    count.value ++;
   } else {
     // Optionally, you can show a message or handle the case when count reaches 10
     Get.snackbar(
